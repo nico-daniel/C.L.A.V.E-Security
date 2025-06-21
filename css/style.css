@@ -1,0 +1,725 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Logo */
+#logo img {
+  height: 80px;
+  width: 80px;
+}
+
+/* Header general */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a0f1c;
+  padding: 15px 40px;
+  color: white;
+}
+
+/* Navegador */
+#navegador nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+#navegador nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 15px;
+  transition: color 0.3s;
+  border-radius: 5px;
+}
+
+#navegador nav ul li a:hover {
+  color: #00bfff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Principal */
+
+.btn {
+  display: inline-block;
+  background-color: #0066cc;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #004a99;
+}
+
+
+/* Sección Presentación */
+#presentacion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 40px;
+  background-color: #8ab5e0;
+  color: white;
+  text-align: center;
+}
+
+.texto-presentacion {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.texto-presentacion h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.texto-presentacion p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.imagen-presentacion {
+  flex: 1 1 300px;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.imagen-presentacion img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+/* Sección Servicios Destacados */
+#servicios-destacados {
+  padding: 50px 20px;
+  background-color: #e9ecef;
+  text-align: center;
+}
+
+#servicios-destacados h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #004080;
+}
+
+.servicios-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.servicio {
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  max-width: 300px;
+  flex: 1 1 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.servicio h3 {
+  color: #004080;
+  margin-bottom: 15px;
+}
+
+.servicio p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Sección ¿Por qué elegirnos? */
+
+#elegirnos {
+  padding: 60px 20px;
+  background-color: #fff;
+  max-width: 800px;
+  margin: 80px auto 100px auto;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 64, 128, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#elegirnos h2 {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: #004080;
+  font-weight: 700;
+}
+
+#elegirnos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+#elegirnos ul li {
+  background-color: #f0f8ff;
+  padding: 15px 25px;
+  border-radius: 8px;
+  position: relative;
+  font-size: 1.2rem;
+  color: #003366;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+#elegirnos ul li:hover {
+  background-color: #d6e9ff;
+}
+
+#elegirnos ul li::before {
+  content: "✔";
+  color: #0066cc;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+#elegirnos ul li::before {
+  content: "✓";
+  color: #0066cc;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Sección Contacto Rápido */
+#contacto-rapido {
+  padding: 50px 20px;
+  background-color: #004080;
+  color: white;
+  text-align: center;
+}
+
+#contacto-rapido h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#contacto-rapido p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+
+
+/* Pie de pagina*/
+
+footer {
+  background-color: #0a0f1c;
+  color: #f0f0f0;
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Secciones internas del footer */
+footer div {
+  width: 23%;
+}
+
+/* Títulos */
+footer h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #00bfff;
+}
+
+/* Texto común */
+footer p {
+  font-size: 15px;
+  margin: 6px 0;
+}
+
+/* Enlaces */
+footer a {
+  color: #f0f0f0;
+  text-decoration: none;
+  margin: 0 4px;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #00bfff;
+}
+
+/* Sección de copyright */
+#copy {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Pagina de Servicios */
+
+#servicios {
+  padding: 60px 40px;
+  background-color: #f5f5f5;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#servicios h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #1a2131;
+  margin-bottom: 40px;
+}
+
+.contenedor-servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 16px 16px 0;
+  font-size: 18px;
+  color: #1a2131;
+}
+
+.card p {
+  padding: 8px 16px;
+  font-size: 14px;
+  flex-grow: 1;
+}
+
+.card a {
+  margin: 16px;
+  padding: 10px;
+  background-color: #1a2131;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+  background-color: #00bfff;
+}
+
+/* Pagina Contacto */
+
+#seccion-contacto {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px 25px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#seccion-contacto h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #004080;
+}
+
+#seccion-contacto #info-contacto p,
+#seccion-contacto #info-contacto h2 {
+  margin-bottom: 12px;
+}
+
+#seccion-contacto #info-contacto h2 {
+  margin-top: 25px;
+  color: #0066cc;
+}
+
+#seccion-contacto #form-mapa {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+#seccion-contacto #form-mapa form {
+  flex: 1 1 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+#seccion-contacto #form-mapa label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  margin-top: 12px;
+}
+
+#seccion-contacto #form-mapa input[type="text"],
+#seccion-contacto #form-mapa input[type="email"],
+#seccion-contacto #form-mapa textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  font-size: 1rem;
+}
+
+#seccion-contacto #form-mapa button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #004080;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#seccion-contacto #form-mapa button:hover {
+  background-color: #0066cc;
+}
+
+#seccion-contacto #form-mapa iframe {
+  flex: 1 1 400px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  min-height: 300px;
+}
+
+/* Acerca de */
+
+  /* Organigrama*/
+#organigrama {
+  padding: 60px 20px;
+  background-color: #f4f9ff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#organigrama h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #003366;
+  margin-bottom: 50px;
+}
+
+#organigrama div {
+  display: flex;
+  justify-content: center;
+}
+
+#organigrama figure img {
+  width: 60em;
+  height: 50em;
+}
+
+  /* Linea de Tiempo*/
+
+#linea-tiempo {
+  padding: 60px 20px;
+  background-color: #f4f9ff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#linea-tiempo h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #003366;
+  margin-bottom: 50px;
+}
+
+.contenedor {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  padding-left: 30px;
+  border-left: 4px solid #0066cc;
+}
+
+.elemento {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+.punto {
+  position: absolute;
+  top: 0;
+  left: -11px;
+  width: 22px;
+  height: 22px;
+  background-color: #0066cc;
+  border: 4px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #0066cc;
+}
+
+.contenido {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15
+}
+
+/* FODA */
+#foda {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f7fb;
+}
+
+.foda-carrusel {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+}
+
+.foda-slide {
+    display: none;
+}
+
+.foda-slide.active {
+    display: block;
+}
+
+.foda-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.foda-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #0a0f1c;
+}
+
+.foda-card ul {
+    padding-left: 20px;
+    list-style: none;
+}
+
+.foda-card li {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #333;
+}
+
+.foda-controles {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.foda-btn {
+    background: linear-gradient(145deg, #1e2a4a, #0a0f1c);
+    color: #fff;
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.foda-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(145deg, #2f3c5a, #121c2c);
+}
+
+.flecha {
+    display: inline-block;
+    line-height: 50px;
+}
+
+
+/* Botón hamburguesa oculto*/
+#menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Celular */
+
+@media (max-width: 768px) {
+
+  /* Header: menú y logo */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 20px;
+  }
+
+  #menu-toggle {
+    display: block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  #navegador {
+    display: none;
+    width: 100%;
+    text-align: right;
+  }
+
+  #navegador.mostrar {
+    display: block;
+  }
+
+  #navegador nav ul {
+    flex-direction: column;
+    gap: 15px;
+    background-color: #0a0f1c;
+    padding: 20px;
+    align-items: flex-end;
+  }
+
+  /* Presentación (si la tenés) */
+  #presentacion {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .texto-presentacion h1 {
+    font-size: 2rem;
+  }
+
+  .imagen-presentacion {
+    max-width: 100%;
+  }
+
+  /* Sección Elegirnos */
+  #elegirnos ul {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  #elegirnos ul li::before {
+    display: none;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Servicios */
+  .contenedor-servicios {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  /* Sección contacto */
+  #seccion-contacto #form-mapa {
+    flex-direction: column;
+  }
+
+  /* Línea de tiempo */
+  #linea-tiempo h2 {
+    font-size: 2rem;
+  }
+
+  .contenedor {
+    padding-left: 20px;
+    border-left: 3px solid #0066cc;
+  }
+
+  .elemento {
+    margin-bottom: 30px;
+  }
+
+  .contenido {
+    font-size: 1rem;
+  }
+
+  /* Presentación variante */
+  #presentacion {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .imagen-presentacion {
+    max-width: 100%;
+  }
+
+  /* Organigrama */
+  #organigrama h2 {
+    font-size: 2rem;
+  }
+
+  #organigrama figure img {
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px;
+  }
+}
